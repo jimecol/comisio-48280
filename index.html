@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo FUNFUTBOL.png" type="image/x-icon"> <!--FAVICON-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clase 2</title>
+</head>
+<body class="gradiente-lineal">
+
+    <header>
+        <a href="index.html">
+            <img src="img/Logo FUNFUTBOL.png" alt="Logo Fun Futbol" title="Es nuestro Logo" class="logo">
+        </a>
+        
+        
+        <!--ESTRUCTURA DE MENU DE NAVEGACION-->
+        <nav>
+            <ul class="menu__nav">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="pages/historia.html">Nuestra Historia</a>
+                </li>
+                <li>
+                    <a href="pages/animaciones.html">Nuestra Historia</a>
+                </li>
+                <li>
+                    <a href="pages/galeria.html">Galeria de imagenes</a>
+                </li>
+                <li>
+                    <a href="pages/ubicacion.html">Ubicacion</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">Contacto</a>
+                </li>
+                
+                <li>
+                    <a href="#footer">Ir al footer</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<section id="section-listaAnidada">
+<!--DEFINIR EL TIPO DE LISTA QUE QUEREMOS-->
+<!--COLOCAR ITEMS DENTRO DE LOS LI-->
+
+<!--LISTA DESORDENADA-->
+    <ul>
+        <li>Tomate</li>
+        <li>Cafe</li>
+        <li>Mate</li>
+    </ul>
+    </section>
+
+<section>
+<!--LISTA ORDENADA-->
+    <ol>
+        <li>Agua</li>
+        <li>Agregar cafe</li>
+        <li>Servir</li>
+    </ol>
+    </section>
+
+    <section>
+    <!--ANIDAR LISTAS-->
+    <ul class="color-pink">
+        <!--LI 1-->
+        <li>Computadoras Portatiles
+            <ul>
+                <li>Procesador I4</li>
+                <li>Procesador I5</li>
+            </ul>
+        </li>
+
+        <!--LI 2-->
+        <li>Computadoras de Escritorio
+            <ul>
+                <li>Pentium</li> 
+                <li>Celeron</li> 
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <table border cellpadding="20" cellspacing="20"> <!--TABLA-->
+        <!--TITULOS DE LA TABLA-->
+        <th>Academia</th> 
+        <th>Profesor</th>
+        <th>Tutores</th>
+
+        <!--PRIMERA FILA-->
+        <tr>
+            <td>Coderhouse</td>
+            <td>Daniel</td>
+            <td>Wanda</td>
+        </tr>
+
+        <!--SEGUNDA FILA-->
+        <tr>
+            <td>Coderhouse</td>
+            <td>Nico</td>
+            <td>Brian</td>
+        </tr>
+
+    </table>
+</section>
+
+
+<h1>Bienvenides a mi Espacio</h1>
+
+<section id="productos">
+    <!--CARD 1-->
+
+    <div class="card1">
+        <img class="card__imagen" src="img/remeras.jpeg" alt="Remeras">
+        
+        <h3 class="card__titulo">Indumentaria</h3>
+    
+        <p class="card__descripcion">Podes encontrar toda la indumentaria para vos y tu equipo.</p>
+    
+<button class="boton">Agregar al carrito</button>
+</div>
+    
+    <div class="card2">
+        <img class="card__imagen" src="img/entrenamiento.jpeg" alt="Entrenamiento">
+        
+        <h3 class="card__titulo">Clases</h3>
+    
+        <p class="card__descripcion">Aprende, tecnica y tactica.</p>
+    
+<button class="boton">Agregar al carrito</button>
+</div>
+
+<div class="card3">
+    <img class="card__imagen" src="img/fenicia.jpeg" alt="Producto">
+    
+    <h3 class="card__titulo">Productos</h3>
+
+    <p class="card__descripcion">Productos Futboleros</p>
+
+<button class="boton">Agregar al carrito</button>
+</div>
+
+<section>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/HrvNhc3WKnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.4912999695343!2d-58.73521348520301!3d-34.38885635366723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca19e4728e045%3A0x541fefff7b42b4a3!2sSta.%20Fe%20968%2C%20B1623AWJ%20Ingeniero%20Maschwitz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1672974617570!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer id="footer">
+    <p>Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>

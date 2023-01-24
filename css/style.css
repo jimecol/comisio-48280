@@ -1,0 +1,553 @@
+/* RESETEO CSS*/
+{
+    margin: 0;
+    padding: 0;
+} 
+
+
+/*TAMAÑO DE LETRA PARA TODOS LOS DISPOSITIVOS
+html {
+    font-size: 62.5%;
+}
+*/
+
+header {
+    background-image: url(../img/header.JPG);
+    background-clip: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30rem;
+
+}
+
+/*SACAR LINEA DE ENLACE*/
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    margin: 2rem;
+}
+
+.menu__nav {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 2rem;
+}
+
+.menu__nav li a {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20%;
+    transition: all 2s;
+}
+
+.menu__nav li a:hover {
+    background-color:red;
+    padding: 10px;
+}
+
+/*.menu__nav li {
+display: inline;
+margin-right: 1rem;
+}*/
+
+/*ESTILO DE LAS CARDS*/
+#productos {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(0, 240, 0); /*PROPIEDAD + VALOR*/
+}
+
+/*TODAS LAS CLASS SE INICIAN CON UN .*/
+.color-pink {
+    color: rgb(255, 0, 242);
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/*CODIGO DE PRODUCTOS*/
+
+.card1 {
+    background-color: orange;
+    /*
+    padding-top: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;*/
+
+    /*ATAJO 1 
+    padding: 3rem 2rem 5rem 4rem*/
+
+    /*ATAJO 2
+padding: 3rem 4rem*/
+
+    /*ATAJO 3*/
+    padding: 3rem;
+
+    /*MARGIN*/
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+
+    /*ANCHO*/
+    width: 200px;
+
+    /*BORDE , TIPO, GROSOR Y COLOR*/
+    border: solid;
+
+}
+
+.card2 {
+    background-color: green;
+    padding: 3rem;
+
+    /*MARGIN*/
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+
+    /*ANCHO*/
+    width: 200px;
+
+    /*BORDE , TIPO, GROSOR Y COLOR*/
+    border: solid;
+
+}
+
+.card3 {
+    background-color:  rgb(255, 0, 242);
+    padding: 3rem;
+
+    /*MARGIN*/
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+
+    /*ANCHO*/
+    width: 200px;
+
+    /*BORDE , TIPO, GROSOR Y COLOR*/
+    border: solid;
+
+}
+
+
+.card__imagen {
+    width: 200px;
+}
+.card__titulo {
+    margin: 1rem 0;
+}
+
+/*ESTILO GALERIA*/
+#galeria {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: blueviolet;
+}
+
+#galeria img {
+    width: 300px;
+    height: 150px;
+}
+
+
+
+.grid {
+
+    margin-top: 2rem;
+    display: grid;  
+        grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr)
+    }
+    
+
+.grid div {
+    border: solid 1px;
+}
+
+/*GRIDS POR AREAS*/
+
+/*GRID MOBILE FIRST*/
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav productos publicidad"
+      "nav servicios publicidad"
+      "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    grid-template-columns: 20% auto 15%;
+
+    column-gap: 10px;
+    row-gap: 10px;
+
+    height: 100vh;
+    
+ }
+
+ /*CUANDO LA PANTALLA MIDA COMO MIN 768 PX (TABLET) HAGA ESTE CODIGO*/
+ @media screen and (min-width: 768px) {
+	#grilla {
+            grid-template-columns: repeat(4, 1fr);
+      }
+      .border {
+    	border: 4px solid black;
+    	background-color: blue;
+     }
+}
+
+/*CUANDO LA PANTALLA MIDA COMO MIN 1024 PX (NOTEBOOK) HAGA ESTE CODIGO*/
+@media screen and (min-width: 1024px) {
+	#grilla {
+            grid-template-columns: repeat(3, 1fr);
+      }
+      .border {
+    	border: 4px solid black;
+    	background-color: green;
+     }
+}
+
+ .border {
+    border: 1px solid black;
+    background-color: gold;
+ }
+
+ header {
+    grid-area: cabecera;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#productos {
+    grid-area: productos;     
+ }
+ section#servicios {
+    grid-area: servicios;     
+ }
+ nav {
+    grid-area: menu;
+ }
+ aside {
+    grid-area: publicidad;
+ }
+
+ /*GRID - ITEMS O GRID HIJOS*/
+
+ .grid-items {
+    justify-items: stretch; /* start | end | center | stretch */
+    align-items: stretch; /* start | end | center | stretch */
+    display: grid;
+    width: 95%;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-template-rows: 100px 100px;
+    grid-row-gap: 10px;
+
+    /*justify-content: start;*/
+    height: 100vh;
+    background-color: teal;
+    
+  }
+
+  .grid-items div {
+    border: solid 1px;
+    font-size: 21px;
+    padding: 5px;
+    background-color: yellow;
+  }
+
+  
+  /*Propiedades self*/
+
+  .self {
+    /*Para que las propiedades self funcionen, hay que darselas siempre a los hjos*/
+  
+    justify-self: stretch;
+    align-self: center;
+  }
+  
+/*EJEMPLO DEL PROFE*/
+
+/*USANDO MOBILE FIRST*/
+
+#body-ejemplo {
+    display: grid;
+    grid-template-areas:
+    "header-profe"
+    "galeria"
+    "banners"
+    "footer-profe" ;
+    grid-template-columns: repeat(1,1fr);
+    background-color: red;
+}
+
+/*BODY 768 TABLET*/
+@media screen and (min-width: 768px) {
+    #body-ejemplo {
+        grid-template-areas:
+        "cabecera-profe cabecera-profe"
+        "galeria galeria"
+        banners banners"
+        footer-profe footer-profe";
+        grid-template-columns: repeat (2,1fr);
+    }
+}
+
+/*ESTILOS DEL HEADER*/
+#header-profe {
+grid-area: cabecera-profe;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px)
+    #header-profe {
+flex-direction: row;
+}
+
+.nav-profe {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-profe li a {
+color: black;
+}
+
+/*EESTILOS GALERIA*/
+#galeria-profe {
+    grid-area: galeria;
+}
+
+#galeria-profe h2 {
+    text-align: center;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        justify-items: center;
+        column-gap: 1rem;
+    }
+}
+
+@media screen and (win-width: 1024px) {
+    .fotos
+        grid-template-columns: repeat (3, 1fr);
+}
+
+.fotos img {
+    width: 20rem;
+    height: 10rem;
+}
+
+
+/*ESTILO DE LOS BANNERS*/
+
+#banners-profe {
+    grid-area: banners;
+    margin-top: 2rem;
+}
+
+#banners-profe h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+ 
+.padre-banner {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media  screen and (min-width: 768px) {
+    .padre-banner {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr)
+        justify-items: center;
+    }
+}
+
+@media screen and (win-width:1024px) {
+    .padre-banner {
+        grid-template-columns: repeat (4, 1fr)
+    }
+}
+
+.hijo-banner {
+    text-align: center;
+}
+
+/*ESTILOS DEL FOOTER*/
+#footer-profe {
+    grid-area: footer-profe;
+    margin-top: 2rem;
+    background-color: blueviolet;
+}
+
+#footer-profe p {
+    font-size: 1rem;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+
+/*CLASE 8 GRADIENTE*/
+
+/*GRADIENTE LINEAL*/
+
+.gradiente-lineal {
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+
+.gradiente-radial {
+    background-image: radial-gradient(pink, green, orange);
+}
+
+/*TRANSFORMACIONES*/
+
+.caja-animaciones {
+    background-image: url(../img/Logo\ FUNFUTBOL.png);
+    width: 583px;
+    height: 441px;
+
+    /*TRANSLATE*/
+    transform: translate(50px, 10px);
+    transition: all 3s;
+
+   /* transform: rotate(120deg);*/
+
+   /*transform: scale(1,1);*/
+
+   /*transform: skew (20deg,10deg)*/
+
+}
+
+.caja-animaciones:hover {
+    transform: rotatey(180deg);
+    cursor: pointer;
+}
+
+/*KEYFRAME*/
+.keyframe{
+    margin-top: 60px;
+    background-color: violet;
+    width: 250px;
+    height: 250px;
+
+    /*NOMBRE DE LA ANIMACION*/
+    animation-name: un_efecto;
+
+    /*por cuanto se repite*/
+    animation-iteration-count: infinite;
+
+    /*ESTILO DE ANIMACION*/
+    animation-timing-function: ease-in;
+
+    /*DURACION*/
+    animation-duration: 2s;
+
+    /*EN CUANTO EMPIEZA*/
+    animation-delay: 10s;
+ 
+}
+
+@keyframes un_efecto {
+    0%{ width: 100px; }
+    10%{ width: 50px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+    background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:blue;}
+}
+
+/*BARRA ANIMACION*/
+.barra-progreso {
+    margin-top: 40px;
+    width: 80%;
+    border: solid 1px;
+    height: 7px;
+}
+
+.barra-rellena {
+    border: solid 1px;
+    height: 6px;
+    /*width: 60%;*/
+    background-color: red;
+
+    animation: cargando 1s infinite;
+}
+
+@keyframes cargando {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
