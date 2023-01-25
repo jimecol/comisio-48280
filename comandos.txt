@@ -10,4 +10,9 @@ añadimos archivos q no encuentra
 4. git commit -m "Escribir un mensaje"
 que sea lo mas parecido a lo q estoy haciendo en la carpeta para entenderlo
 
-5
+5 git log me muestra los commit 
+
+6. git log --online
+
+7. git branch 
+me dice en q rama estoy 
