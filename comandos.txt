@@ -7,3 +7,7 @@ Comandos:
 3. git add . 
 añadimos archivos q no encuentra
 
+4. git commit -m "Escribir un mensaje"
+que sea lo mas parecido a lo q estoy haciendo en la carpeta para entenderlo
+
+5
