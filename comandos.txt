@@ -16,3 +16,6 @@ que sea lo mas parecido a lo q estoy haciendo en la carpeta para entenderlo
 
 7. git branch 
 me dice en q rama estoy 
+
+8. git checkout 
+Para movernos por las ramas 

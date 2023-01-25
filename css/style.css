@@ -551,3 +551,9 @@ h1 {
     }
 }
 
+/*CLASE GIT*/
+.titulo-git { 
+    font-size: 2rem;
+    color: white;
+}
+
